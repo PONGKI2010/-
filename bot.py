@@ -53,8 +53,3 @@ async def on_message(message):
                 embed = discord.Embed(title="재고추가 실패!", description="내용을 입력해주세요.", color=discord.Color.red())
                 await message.reply(embed=embed)
         else:
-            embed = discord.Embed(title="권한 없음!", description="이 명령어는 특정 역할만 사용 가능합니다.", color=discord.Color.red())
-            await message.reply(embed=embed)
-
-TOKEN = "MTE1OTgwMDI4MDg1MDg5NDg0OA.Gcn8pW.PvYuZCVLGpF0w9wW6VOsBd7zGTJelR4ddD9iJ8" # 님 봇 토큰 넣어요
-client.run(TOKEN)
